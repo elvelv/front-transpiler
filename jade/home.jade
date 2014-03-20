@@ -1,0 +1,22 @@
+doctype html
+html(lang='en')
+  head
+    title= nav.main.title
+  body
+    h1 Hi there
+    .nav
+        ul.menu
+          //hmm val,key
+         each val, key in nav
+            li
+              a.tryThisWay= key.charAt(0).toUpperCase() + key.slice(1, key.length)
+              a(href="/#{key}")= val.title
+    .container.row-fluid
+      .col-12
+        - for (var i = 0; i < 3; ++i)
+          .col-4.
+             Текст #{i+1}
+    each cube in cubes
+      .cube
+          img(src='img/#{cube.title}.png')
+          p= cube.text
