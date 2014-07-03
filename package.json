@@ -1,9 +1,10 @@
 {
-  "name": "cubes",
+  "name": "compileToStatic",
   "version": "0.1.0",
   "devDependencies": {
     "grunt": "~0.4.2",
-    "grunt-contrib-jade": "~0.9.1"
+    "grunt-contrib-jade": "~0.9.1",
+    "grunt-contrib-stylus": "^0.18.0"
   },
   "author": "Yury"
 }
