@@ -3,7 +3,7 @@
 ### Клонировать в папку проекта и затереть git
 
 ```bash
-git clone git@git.devhost.amg:yshapkarin/front-transpiler.git
+git clone git@github.com:lvlv/front-transpiler.git
 cd front-transpiler
 rm -rf .git
 ```
@@ -12,7 +12,7 @@ rm -rf .git
 
 ```bash
 # todo: не обзательно везде использовать именно &&
-link='git@git.devhost.amg:yshapkarin/front-transpiler.git' && git clone ${link} && _git=${link#*/} && cd $(echo ${_git%.*}) && rm -rf .git
+link='git@github.com:lvlv/front-transpiler.git' && git clone ${link} && _git=${link#*/} && cd $(echo ${_git%.*}) && rm -rf .git
 ```
 
 ### Команды Grunt
