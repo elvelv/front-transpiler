@@ -3,7 +3,7 @@
 ### Clone into the project and remove git files
 
 ```bash
-git clone git@github.com:lvlv/front-transpiler.git
+git clone git@github.com:shapkarin/front-transpiler.git
 cd front-transpiler
 rm -rf .git
 ```
@@ -11,7 +11,7 @@ rm -rf .git
 ### Or :one: line
 
 ```bash
-link='git@github.com:lvlv/front-transpiler.git' && git clone ${link} && _git=${link#*/} && cd $(echo ${_git%.*}) && rm -rf .git
+link='git@github.com:shapkarin/front-transpiler.git' && git clone ${link} && _git=${link#*/} && cd $(echo ${_git%.*}) && rm -rf .git
 ```
 
 ### Grunt tasks
