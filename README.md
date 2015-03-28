@@ -1,6 +1,6 @@
-# Grunt-сборщик статики и не только
+# Prototyping templates with stylus and jade
 
-### Клонировать в папку проекта и затереть git
+### Clone into the project and remove git files
 
 ```bash
 git clone git@github.com:lvlv/front-transpiler.git
@@ -8,23 +8,17 @@ cd front-transpiler
 rm -rf .git
 ```
 
-### Или даже одной строкой, если не страшно :smirk_cat:
+### Or :one: line
 
 ```bash
-# todo: не обзательно везде использовать именно &&
 link='git@github.com:lvlv/front-transpiler.git' && git clone ${link} && _git=${link#*/} && cd $(echo ${_git%.*}) && rm -rf .git
 ```
 
-### Команды Grunt
+### Grunt tasks
 
 ```bash
-# копиляция и запуск watch
+# compile and run watch
 grunt
-# компиляция
+# compile
 grunt co
-```
-
-```
-На каждую сборку будет своя ветка. Типа c stylus-to-less, jade-to-underscore, возможно jade-to-twig, with-coffeescript и т.д.
-В ветке master скорее всего не будет ничего кроме readme.md
 ```

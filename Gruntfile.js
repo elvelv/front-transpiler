@@ -31,14 +31,26 @@ module.exports = function(grunt) {
           },
           'include css': true
       }
+    },
+    watch: {
+      scripts: {
+        //TODO: also watch to Yaml datasets
+        files: ['jade/**/*.jade', 'stylus/**/*.styl'],
+        tasks: [ 'jade', 'stylus' ],
+        options: {
+          spawn: false
+          //,livereload: true
+        }
+      }
     }
   });
 
   // Load the plugin that provides the task.
   grunt.loadNpmTasks('grunt-contrib-jade');
   grunt.loadNpmTasks('grunt-contrib-stylus');
+  grunt.loadNpmTasks('grunt-contrib-watch');
 
-  // Default task(s).
-  grunt.registerTask('default', ['jade', 'stylus']);
+  grunt.registerTask('default', ['jade', 'stylus', 'watch']);
+  grunt.registerTask('co', ['jade', 'stylus']);
 
 };
