@@ -11,7 +11,13 @@ rm -rf .git
 #### Or :one: line
 
 ```bash
-link='git@github.com:shapkarin/front-transpiler.git' && git clone ${link} && _git=${link#*/} && cd $(echo ${_git%.*}) && rm -rf .git
+link='git@github.com:shapkarin/front-transpiler.git' 
+name='' 
+&& git clone ${link} 
+&& _git=${link#*/} 
+&& cd $(echo ${_git%.*}) 
+&& mv ${_git%.*} ${name}
+&& rm -rf .git
 ```
 
 #### Grunt tasks
