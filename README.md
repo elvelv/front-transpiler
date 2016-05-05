@@ -15,8 +15,8 @@ link='git@github.com:shapkarin/front-transpiler.git'
 name='' 
 && git clone ${link} 
 && _git=${link#*/} 
-&& cd $(echo ${_git%.*}) 
 && mv ${_git%.*} ${name}
+&& cd $(echo ${name}) 
 && rm -rf .git
 ```
 
